@@ -1,38 +1,36 @@
-.App {
-  text-align: center;
+body {
+  font-family: Helvetica;
+  background-image: url('../public/fundo-de-ficcao-cientifica.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  height: 100vh;
 }
 
-.App-link {
-  color: #61dafb;
+.clock {
+  font-size: 48px;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 1rem;
+  padding: 1rem 2rem;
+  height: 80px;
+  display: flex;
+  align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.clock span {
+  margin-right: 0.5rem;
+}
+
+.divider {
+  margin: 0 8px;
 }
