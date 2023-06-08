@@ -12,7 +12,7 @@ function App() {
     return () => {
       clearInterval(intervalID);
     };
-  }, []);
+  }, [updateTime]);
 
   const formatTime = (time) => {
     return time.toString().padStart(2, "0");
