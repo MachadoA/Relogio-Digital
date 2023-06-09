@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/static/css/main.4bc95b76.css",
-    "main.js": "/static/js/main.eb75be13.js",
+    "main.js": "/static/js/main.00a0e766.js",
     "static/media/fundo-de-ficcao-cientifica.jpg": "/static/media/fundo-de-ficcao-cientifica.39865171648c9b8419ef.jpg",
     "index.html": "/index.html",
     "main.4bc95b76.css.map": "/static/css/main.4bc95b76.css.map",
-    "main.eb75be13.js.map": "/static/js/main.eb75be13.js.map"
+    "main.00a0e766.js.map": "/static/js/main.00a0e766.js.map"
   },
   "entrypoints": [
     "static/css/main.4bc95b76.css",
-    "static/js/main.eb75be13.js"
+    "static/js/main.00a0e766.js"
   ]
 }

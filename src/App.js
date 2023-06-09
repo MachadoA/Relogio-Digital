@@ -6,29 +6,27 @@ function App() {
   const [minutes, setMinutes] = useState("00");
   const [seconds, setSeconds] = useState("00");
 
-  const updateTime = () => {
-  const now = new Date();
-  const hours = formatTime(now.getHours());
-  const minutes = formatTime(now.getMinutes());
-  const seconds = formatTime(now.getSeconds());
-    setHours(hours);
-    setMinutes(minutes);
-    setSeconds(seconds);
-  };
-  
-  useEffect(() => {
-    const intervalID = setInterval(() => updateTime(), 1000);
-
-    return () => {
-      clearInterval(intervalID);
-    };
-  }, [updateTime]);
-
   const formatTime = (time) => {
     return time.toString().padStart(2, "0");
   };
 
+  useEffect(() => {
+    const updateTime = () => {
+      const now = new Date();
+      const hours = formatTime(now.getHours());
+      const minutes = formatTime(now.getMinutes());
+      const seconds = formatTime(now.getSeconds());
+      setHours(hours);
+      setMinutes(minutes);
+      setSeconds(seconds);
+    };
 
+    const intervalID = setInterval(updateTime, 1000);
+
+    return () => {
+      clearInterval(intervalID);
+    };
+  }, []);
 
   return (
     <div className="container">
